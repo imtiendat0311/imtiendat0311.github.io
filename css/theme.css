@@ -1,0 +1,33 @@
+body{ background-color: snow}
+@font-face{
+    font-family: koara-font;
+    src:url('../fonts/koara/koarawildfreeregular.otf');
+}
+h2{
+    font-family:koara-font;
+    color: #4b4b4b;
+    font-size: 50px ;
+}
+h2:hover{
+    font-family:koara-font;
+    color:#3b5998;
+    font-size: 50px ;
+}
+.myava{
+    text-align: center;
+}
+.myava img{
+
+}
+.intro{
+    text-align: center;
+    font-family: koara-font ;
+    font-size:20px;
+    line-height:70px;
+}
+
+.social{
+    line-height: 1px;
+    text-align: center;
+    letter-spacing: 50px;
+}
