@@ -23,11 +23,16 @@ h2:hover{
     text-align: center;
     font-family: koara-font ;
     font-size:20px;
-    line-height:70px;
+    line-height: 3px;
 }
 
+.intro ol{
+    line-height: normal;
+    text-align: left;
+    margin-left:650px;
+}
 .social{
-    line-height: 1px;
+    line-height: 100px;
     text-align: center;
-    letter-spacing: 50px;
+    letter-spacing: 70px;
 }
