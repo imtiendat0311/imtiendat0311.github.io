@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 <link rel="stylesheet" href="css/social-circles.min.css">
 <link rel="stylesheet" href="css/theme.css">
 <head>
@@ -13,14 +13,96 @@
  <h2>Dat Nguyen Tien</h2><br>
 </div>
 <div class="intro">
- <p>Computer Student try to make my own website hola </p><br>
- <p>Here are my Social Media </p>
+ <p>Computer Student try to make my own website </p><br>
+ <p>Programing Language : Java</p><br>
+ <p>TODO :</p>
+ <ol>
+  <li>Achivement page</li>
+  <li>Finishing styling</li>
+  <li>Add wiki</li>
+ </ol>
+ <br>
 </div>
+
+
 <div class="social">
 <a class="icon-facebook social-button borderless static" href="https://www.facebook.com/nguyen.tien.dat.03.11"></a>
 <a class="icon-instagram social-button borderless static" href="http://instagram.com/___tdat___/"></a>
 <a class="icon-github social-button borderless static" href="https://github.com/imtiendat0311"></a>
+<br>
 </div>
+<div id="demo">
+</div>
+<script>
+ var txt;
+ var OSName="Unknown OS";
+ var nVer = navigator.appVersion;
+ var nAgt = navigator.userAgent;
+ var browserName  = navigator.appName;
+ var fullVersion  = ''+parseFloat(navigator.appVersion);
+ var majorVersion = parseInt(navigator.appVersion,10);
+ var nameOffset,verOffset,ix;
+ // In Opera, the true version is after "Opera" or after "Version"
+ if ((verOffset=nAgt.indexOf("Opera"))!=-1) {
+  browserName = "Opera";
+  fullVersion = nAgt.substring(verOffset+6);
+  if ((verOffset=nAgt.indexOf("Version"))!=-1)
+   fullVersion = nAgt.substring(verOffset+8);
+ }
+// In MSIE, the true version is after "MSIE" in userAgent
+ else if ((verOffset=nAgt.indexOf("MSIE"))!=-1) {
+  browserName = "Microsoft Internet Explorer";
+  fullVersion = nAgt.substring(verOffset+5);
+ }
+// In Chrome, the true version is after "Chrome"
+ else if ((verOffset=nAgt.indexOf("Chrome"))!=-1) {
+  browserName = "Chrome";
+  fullVersion = nAgt.substring(verOffset+7);
+ }
+// In Safari, the true version is after "Safari" or after "Version"
+ else if ((verOffset=nAgt.indexOf("Safari"))!=-1) {
+  browserName = "Safari";
+  fullVersion = nAgt.substring(verOffset+7);
+  if ((verOffset=nAgt.indexOf("Version"))!=-1)
+   fullVersion = nAgt.substring(verOffset+8);
+ }
+// In Firefox, the true version is after "Firefox"
+ else if ((verOffset=nAgt.indexOf("Firefox"))!=-1) {
+  browserName = "Firefox";
+  fullVersion = nAgt.substring(verOffset+8);
+ }
+// In most other browsers, "name/version" is at the end of userAgent
+ else if ( (nameOffset=nAgt.lastIndexOf(' ')+1) <
+         (verOffset=nAgt.lastIndexOf('/')) )
+ {
+  browserName = nAgt.substring(nameOffset,verOffset);
+  fullVersion = nAgt.substring(verOffset+1);
+  if (browserName.toLowerCase()==browserName.toUpperCase()) {
+   browserName = navigator.appName;
+  }
+ }
+ // trim the fullVersion string at semicolon/space if present
+ if ((ix=fullVersion.indexOf(";"))!=-1)
+  fullVersion=fullVersion.substring(0,ix);
+ if ((ix=fullVersion.indexOf(" "))!=-1)
+  fullVersion=fullVersion.substring(0,ix);
 
+ txt='' +'Browser name  = '+browserName
+         +'/ Full version  = '+fullVersion
+
+ if (window.navigator.userAgent.indexOf("Windows NT 10.0")!= -1) OSName="Windows 10";
+ if (window.navigator.userAgent.indexOf("Windows NT 6.2") != -1) OSName="Windows 8";
+ if (window.navigator.userAgent.indexOf("Windows NT 6.1") != -1) OSName="Windows 7";
+ if (window.navigator.userAgent.indexOf("Windows NT 6.0") != -1) OSName="Windows Vista";
+ if (window.navigator.userAgent.indexOf("Windows NT 5.1") != -1) OSName="Windows XP";
+ if (window.navigator.userAgent.indexOf("Windows NT 5.0") != -1) OSName="Windows 2000";
+ if (window.navigator.userAgent.indexOf("Mac")            != -1) OSName="Mac/iOS";
+ if (window.navigator.userAgent.indexOf("X11")            != -1) OSName="UNIX";
+ if (window.navigator.userAgent.indexOf("Linux")          != -1) OSName="Linux";
+ txt+='/ Your OS: '+OSName;
+ document.getElementById("demo").style.textAlign ="center";
+ document.getElementById("demo").style.fontFamily = "koara-font";
+ document.getElementById("demo").innerHTML = txt;
+</script>
 </body>
 </html>
