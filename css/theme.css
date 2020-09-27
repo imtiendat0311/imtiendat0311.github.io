@@ -25,16 +25,10 @@ h2:hover{
     font-size:20px;
     line-height: 3px;
 }
-.todo{
 
-    font-size:30px;
-    font-family: koara-font ;
-    text-align: left;
-}
-.todo ol{
-    list-style: none;
+.intro ol{
     line-height: normal;
-
+    text-align: left;
 
 }
 .social{
