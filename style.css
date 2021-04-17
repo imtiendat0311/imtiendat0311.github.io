@@ -67,9 +67,9 @@
 
 }
 @media (min-width: 992px){
-   .modal-dialog{
-  max-width: 900px;
-}
+  .modal-lg {
+    width: 900px;
+  }
  #paragraph{
       font-size:15px;
   }
