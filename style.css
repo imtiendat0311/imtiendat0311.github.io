@@ -1,6 +1,7 @@
 @media (max-width: 575.98px){
     #languageLabel{
         width:90px!important;
+        border-top-left-radius: 4.5px
     }
     .modal-dialog{
         min-height:300px;
