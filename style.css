@@ -79,14 +79,14 @@
 
 @font-face {
     font-family: Swiss721BT;
-    src: url(https://portal.freedomx.net/marriott/static/portal/fonts/Swiss721BT-BoldCondensed.eot);
-    src: url(https://portal.freedomx.net/marriott/static/portal/fonts/Swiss721BT-BoldCondensed.eot#iefix) format("embedded-opentype"), url(https://portal.freedomx.net/marriott/static/portal/fonts/Swiss721BT-BoldCondensed.woff) format("woff"), url(https://portal.freedomx.net/marriott/static/portal/fonts/Swiss721BT-BoldCondensed.ttf) format("truetype"), url(https://portal.freedomx.net/marriott/static/portal/fonts/Swiss721BT-BoldCondensed.svg) format("svg")
+    src: url(fonts/Swiss721BT-BoldCondensed.eot);
+    src: url(fonts/Swiss721BT-BoldCondensed.eot#iefix) format("embedded-opentype"), url(fonts/Swiss721BT-BoldCondensed.woff) format("woff"), url(fonts/Swiss721BT-BoldCondensed.ttf) format("truetype"), url(fonts/Swiss721BT-BoldCondensed.svg) format("svg")
 }
 
 @font-face {
     font-family: GT Super Display;
-    src: url(https://portal.freedomx.net/marriott/static/portal/fonts/GT-Super-Display-Light.eot);
-    src: url(https://portal.freedomx.net/marriott/static/portal/fonts/GT-Super-Display-Light.eot#iefix) format("embedded-opentype"), url(https://portal.freedomx.net/marriott/static/portal/fonts/GT-Super-Display-Light.woff) format("woff"), url(https://portal.freedomx.net/marriott/static/portal/fonts/GT-Super-Display-Light.ttf) format("truetype"), url(https://portal.freedomx.net/marriott/static/portal/fonts/GT-Super-Display-Light.svg) format("svg")
+    src: url(fonts/GT-Super-Display-Light.eot);
+    src: url(fonts/GT-Super-Display-Light.eot#iefix) format("embedded-opentype"), url(fonts/GT-Super-Display-Light.woff) format("woff"), url(fonts/GT-Super-Display-Light.ttf) format("truetype"), url(fonts/GT-Super-Display-Light.svg) format("svg")
 }
 
 iframe{
