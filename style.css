@@ -4,13 +4,14 @@
     }
     .modal-dialog{
         min-height:300px;
+          margin-top:40%;
     }
     #current-language-name{
         font-size:12px;
     }
     #modal-header{
         padding-left:0px !important;
-        margin-top:40% !important;
+      
     }
     #header-par{
      font-size: 20px;
