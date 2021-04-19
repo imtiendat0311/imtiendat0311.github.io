@@ -161,5 +161,14 @@ padding: none;
 #bottom{
     padding-left:0px;
 }
+.dropdown-menu > li > a {
+    font-size: 16px;
+    color: #DB002E;
+    text-decoration: none;
+    line-height: 19px;
+    padding-left:10px;
+    padding-bottom:30%;
+}
+
 
 
