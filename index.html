@@ -16,11 +16,15 @@
   <div class="modal-dialog" >
     <div class="modal-content">
       <div class="modal-header">
-        <button id="languageLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <div>
+  <button id="languageLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <img src="https://portal.freedomx.net/marriott/static/portal/images/language.png" srcset="https://portal.freedomx.net/marriott/static/portal/images/language@2x.png 2x, https://portal.freedomx.net/marriott/static/portal/images/language@3x.png 3x" class="language">
             <span id="current-language-name" class="text-uppercase">English</span>
             <img src="https://portal.freedomx.net/marriott/static/portal/images/dropdown-down.png" srcset="https://portal.freedomx.net/marriott/static/portal/images/dropdown-down@2x.png 2x,https://portal.freedomx.net/marriott/static/portal/images/dropdown-down@3x.png 3x" class="dropdown-language">
         </button>
+        <ul class="dropdown-menu dropdown-menu-left sublanguage" aria-labelledby="languageLabel" id="language-dropdown">
+        <li class="active en_active"><a href="#" data-action="change_language" data-code="en">English</a></li><li><a href="#" role="gcp-action" data-action="change_language" data-code="ko">한국어‬</a></li><li><a href="#" role="gcp-action" data-action="change_language" data-code="ja">日本語‬</a></li></ul>
+    </div>
             <button type="button" class="close text-align-right" style="padding-right:20px" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
