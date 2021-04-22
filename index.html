@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Dat Nguyen Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.plyr.io/3.6.7/plyr.css" />
+        <script src="https://cdn.plyr.io/3.6.7/plyr.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        @font-face {
+            font-family: Bungee_Shade;
+            src: url(font/Bungee/Bungee_Shade/BungeeShade-Regular.ttf);
+        }
+        @font-face{
+            font-family:Bungee;
+            src:url(font/Bungee/Bungee-Regular.ttf);
+        }
+        @font-face{
+            font-family:Bungee-Inline;
+            src:url(font/Bungee/Bungee_Inline/BungeeInline-Regular.ttf);
+        }
+        @font-face {
+            font-family: Bungee-Outline;
+            src: url(font/Bungee/Bungee_Outline/BungeeOutline-Regular.ttf);
+        }
+        @font-face {
+            font-family: Bungee-Hairline;
+            src: url(font/Bungee/Bungee_Hairline/BungeeHairline-Regular.ttf);
+        }
+        
+
+ body{background: #de6161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2657eb, #de6161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#content{
+padding-top:5%;
+padding-bottom:5%;
+padding-right:5%; 
+padding-left:5%;
+}
+#word>h2{color:white;}
+#word>p{color:white;}
+.horizontal_line{
+height:2px;
+background-color: #FEE140;
+background-image: linear-gradient(90deg, #FEE140 0%, #FA709A 100%);
+
+}
+#word>h2{
+    font-family: Bungee-Shade;
+    color: white;
+}
+#word>p{
+    font-family: Bungee-Hairline;
+    color:white;
+}
+        </style>
+    <body>
+
+        <div class="row" id="content">
+            <div class="col text-center" id="word">
+          <h2> Dat Nguyen's Page</h2>
+              <div class="horizontal_line">
+                <br><br>
+              </div>
+          <p class="text-left">Implement Plyr PLayer<br>Using HTML5 VIDEO WITH BOOTSTRAP 4.6 </p>
+            </div>
+            <div class="col-7" id="plyrplayer">
+              <video class="plyr--plyr-menu-radius" id="player" controls crossorigin playsinline poster="">
+                 <source src="" type="video/mp4" size="576">
+            </div>
+          </div>
+        </div>
+        <script>const player = new Plyr('#player', {captions: {active: true}});
+
+            // Expose player so it can be used from the console
+            window.player = player;
+            </script>
+    </body>
+</html>
